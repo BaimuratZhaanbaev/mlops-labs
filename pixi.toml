@@ -1,0 +1,35 @@
+[workspace]
+authors = ["Baika <bajmuratzaanbaev@gmail.com>"]
+channels = ["conda-forge", "pypi"]
+name = "DIA_mlops_project"
+platforms = ["win-64", "linux-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.11.*"
+numpy = ">=2.4.6,<3"
+pandas = ">=3.0.6,<4"
+
+[feature.dev.dependencies]
+ruff = "*"
+ipykernel = "*"
+
+[feature.data.dependencies]
+dvc = ">=3.0.0"
+
+[feature.train.dependencies]
+mlflow = ">=2.0.0"
+scikit-learn = "*"
+matplotlib = "*"
+skl2onnx = "*"
+
+[feature.prod.dependencies]
+onnx = "*"
+onnxruntime = "*"
+
+[environments]
+default = ["dev", "data", "train", "prod"]
+ci-train = ["data", "train"]
+prod-serving = ["prod"]
