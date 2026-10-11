@@ -7,6 +7,7 @@ version = "0.1.0"
 
 [tasks]
 generate-data = "python scripts/generate_mock_data.py"
+upgrade-data = "python scripts/upgrade_dataset_v2.py"
 
 [dependencies]
 python = "3.11.*"
