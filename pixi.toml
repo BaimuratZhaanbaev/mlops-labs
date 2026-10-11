@@ -15,6 +15,7 @@ pandas = ">=3.0.6,<4"
 [feature.dev.dependencies]
 ruff = "*"
 ipykernel = "*"
+pre-commit = ">=4.6.2,<5"
 
 [feature.data.dependencies]
 dvc = ">=3.0.0"
