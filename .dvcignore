@@ -1,0 +1,23 @@
+# Add patterns of files dvc should ignore, which could improve
+# the performance. Learn more at
+# https://dvc.org/doc/user-guide/dvcignore
+
+# 1. Системный кэш Python и временные файлы
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 2. Локальное окружение Pixi
+.pixi/
+
+# 3. Служебный кэш и локальные конфиги DVC
+.dvc/cache
+.dvc/tmp
+.dvc/config.local
+
+# 4. Временные файлы ОС
+.DS_Store
+Thumbs.db
