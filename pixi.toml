@@ -6,6 +6,7 @@ platforms = ["win-64", "linux-64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
+generate-data = "python scripts/generate_mock_data.py"
 
 [dependencies]
 python = "3.11.*"
