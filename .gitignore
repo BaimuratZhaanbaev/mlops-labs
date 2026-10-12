@@ -1,3 +1,13 @@
-# pixi environments
-.pixi/*
-!.pixi/config.toml
+# Pixi environments
+.pixi/
+
+
+# MLflow (из требований на стр. 25)
+mlflow.db
+mlflow_artifacts/
+mlruns/
+plots/
+
+# Python
+__pycache__/
+*.pyc
