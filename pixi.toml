@@ -9,6 +9,7 @@ version = "0.1.0"
 generate-data = "python scripts/generate_mock_data.py"
 upgrade-data = "python scripts/upgrade_dataset_v2.py"
 mlflow-server = "mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlflow_artifacts --host 127.0.0.1 --port 5000"
+train = "python train.py"
 
 [dependencies]
 python = "3.11.*"
@@ -19,6 +20,7 @@ pandas = ">=3.0.6,<4"
 ruff = "*"
 ipykernel = "*"
 pre-commit = ">=4.6.2,<5"
+loguru = ">=0.7.3,<0.8"
 
 [feature.data.dependencies]
 dvc = ">=3.0.0"
