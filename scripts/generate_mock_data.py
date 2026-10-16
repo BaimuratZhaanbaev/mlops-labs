@@ -1,6 +1,7 @@
-import pandas as pd
-import numpy as np
 import os
+
+import numpy as np
+import pandas as pd
 
 # Гарантируем, что папка data существует
 os.makedirs('data', exist_ok=True)

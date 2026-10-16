@@ -1,12 +1,13 @@
 import argparse
-import numpy as np
+
 import mlflow
 import mlflow.sklearn
-from skl2onnx import to_onnx
-from skl2onnx.common.data_types import FloatTensorType
+import numpy as np
 import onnx
 import onnxruntime as ort
 from loguru import logger
+from skl2onnx import to_onnx
+from skl2onnx.common.data_types import FloatTensorType
 
 
 def parse_args():

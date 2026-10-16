@@ -1,6 +1,7 @@
-import pandas as pd
-import numpy as np
 import os
+
+import numpy as np
+import pandas as pd
 
 # Проверяем, что исходный датасет существует
 if not os.path.exists('data/dataset.csv'):
