@@ -11,3 +11,4 @@ plots/
 # Python
 __pycache__/
 *.pyc
+.ruff_cache/

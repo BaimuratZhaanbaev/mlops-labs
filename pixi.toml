@@ -9,9 +9,9 @@ version = "0.1.0"
 generate-data = "python scripts/generate_mock_data.py"
 upgrade-data = "python scripts/upgrade_dataset_v2.py"
 mlflow-server = "mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlflow_artifacts --host 127.0.0.1 --port 5000"
-train = "python train.py"
-export-onnx = "python export_onnx.py"
-inference-onnx = "python inference_onnx.py"
+train = "python scripts/train.py"
+export-onnx = "python scripts/export_onnx.py"
+inference-onnx = "python scripts/inference_onnx.py"
 
 [dependencies]
 python = "3.11.*"
